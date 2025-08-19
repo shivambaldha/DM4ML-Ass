@@ -1,0 +1,60 @@
+2025-08-17 01:27:59,017 [INFO] Starting data ingestion...
+2025-08-17 01:27:59,019 [ERROR] Failed to ingest transactions: [Errno 2] No such file or directory: 'sample_data/transactions.csv'
+2025-08-17 01:27:59,375 [INFO] Web logs data ingested: data/raw/web_logs_20250817_012759.csv
+2025-08-17 01:27:59,376 [INFO] Data ingestion completed successfully.
+2025-08-17 03:59:58,545 [INFO] Starting data ingestion...
+2025-08-17 03:59:58,547 [ERROR] Failed to ingest transactions: [Errno 2] No such file or directory: 'sample_data/transactions.csv'
+2025-08-17 03:59:59,492 [INFO] Web logs data ingested: data/raw/web_logs_20250817_035959.csv
+2025-08-17 03:59:59,493 [INFO] Data ingestion completed successfully.
+2025-08-17 04:03:37,030 [INFO] Starting data ingestion...
+2025-08-17 04:03:37,032 [ERROR] Failed to ingest transactions: [Errno 2] No such file or directory: 'sample_data/transactions.csv'
+2025-08-17 04:03:37,411 [INFO] Web logs data ingested: data/raw/web_logs_20250817_040337.csv
+2025-08-17 04:03:37,413 [INFO] Data ingestion completed successfully.
+2025-08-17 04:28:33,235 [INFO] Starting data ingestion...
+2025-08-17 04:28:33,237 [ERROR] Failed to ingest transactions: [Errno 2] No such file or directory: 'sample_data/transactions.csv'
+2025-08-17 04:28:33,838 [INFO] Web logs data ingested: data/raw/web_logs_20250817_042833.csv
+2025-08-17 04:28:33,840 [INFO] Data ingestion completed successfully.
+2025-08-17 04:31:20,127 [INFO] Starting data ingestion...
+2025-08-17 04:31:20,129 [ERROR] Failed to ingest transactions: [Errno 2] No such file or directory: 'sample_data/transactions.csv'
+2025-08-17 04:31:20,937 [INFO] Web logs data ingested: data/raw/web_logs_20250817_043120.csv
+2025-08-17 04:31:20,938 [INFO] Data ingestion completed successfully.
+2025-08-17 04:36:06,570 [INFO] Starting data ingestion...
+2025-08-17 04:36:06,571 [ERROR] Failed to ingest transactions: [Errno 2] No such file or directory: 'sample_data/transactions.csv'
+2025-08-17 04:36:08,492 [INFO] Web logs data ingested: data/raw/web_logs_20250817_043608.csv
+2025-08-17 04:36:08,494 [INFO] Data ingestion completed successfully.
+2025-08-17 04:46:33,274 [INFO] Starting data ingestion...
+2025-08-17 04:46:33,277 [ERROR] Failed to ingest transactions: [Errno 2] No such file or directory: 'sample_data/transactions.csv'
+2025-08-17 04:46:34,206 [INFO] Web logs data ingested: data/raw/web_logs_20250817_044634.csv
+2025-08-17 04:46:34,208 [INFO] Data ingestion completed successfully.
+2025-08-17 04:56:19,185 [INFO] Starting data ingestion...
+2025-08-17 04:56:19,188 [ERROR] Failed to ingest transactions: [Errno 2] No such file or directory: 'sample_data/transactions.csv'
+2025-08-17 04:56:19,976 [INFO] Web logs data ingested: data/raw/web_logs_20250817_045619.csv
+2025-08-17 04:56:19,978 [INFO] Data ingestion completed successfully.
+2025-08-17 05:05:52,013 [INFO] Starting data ingestion...
+2025-08-17 05:05:52,014 [ERROR] Failed to ingest transactions: [Errno 2] No such file or directory: 'sample_data/transactions.csv'
+2025-08-17 05:05:52,955 [INFO] Web logs data ingested: data/raw/web_logs_20250817_050552.csv
+2025-08-17 05:05:52,957 [INFO] Data ingestion completed successfully.
+2025-08-17 05:06:51,656 [INFO] Starting data ingestion...
+2025-08-17 05:06:51,658 [ERROR] Failed to ingest transactions: [Errno 2] No such file or directory: 'sample_data/transactions.csv'
+2025-08-17 05:06:52,230 [INFO] Web logs data ingested: data/raw/web_logs_20250817_050652.csv
+2025-08-17 05:06:52,231 [INFO] Data ingestion completed successfully.
+2025-08-17 05:09:23,470 [INFO] Starting data ingestion...
+2025-08-17 05:09:23,472 [ERROR] Failed to ingest transactions: [Errno 2] No such file or directory: 'sample_data/transactions.csv'
+2025-08-17 05:09:23,899 [INFO] Web logs data ingested: data/raw/web_logs_20250817_050923.csv
+2025-08-17 05:09:23,901 [INFO] Data ingestion completed successfully.
+2025-08-17 05:12:06,781 [INFO] Starting data ingestion...
+2025-08-17 05:12:06,783 [ERROR] Failed to ingest transactions: [Errno 2] No such file or directory: 'sample_data/transactions.csv'
+2025-08-17 05:12:07,444 [INFO] Web logs data ingested: data/raw/web_logs_20250817_051207.csv
+2025-08-17 05:12:07,445 [INFO] Data ingestion completed successfully.
+2025-08-17 05:35:35,715 [INFO] Starting data ingestion...
+2025-08-17 05:35:35,718 [ERROR] Failed to ingest transactions: [Errno 2] No such file or directory: 'sample_data/transactions.csv'
+2025-08-17 05:35:36,371 [INFO] Web logs data ingested: data/raw/web_logs_20250817_053536.csv
+2025-08-17 05:35:36,373 [INFO] Data ingestion completed successfully.
+2025-08-17 05:38:54,690 [INFO] Starting data ingestion...
+2025-08-17 05:38:54,693 [ERROR] Failed to ingest transactions: [Errno 2] No such file or directory: 'sample_data/transactions.csv'
+2025-08-17 05:38:55,359 [INFO] Web logs data ingested: data/raw/web_logs_20250817_053855.csv
+2025-08-17 05:38:55,361 [INFO] Data ingestion completed successfully.
+2025-08-18 16:25:42,145 [INFO] Starting data ingestion...
+2025-08-18 16:25:42,148 [ERROR] Failed to ingest transactions: [Errno 2] No such file or directory: 'sample_data/transactions.csv'
+2025-08-18 16:25:44,120 [INFO] Web logs data ingested: data/raw/web_logs_20250818_162544.csv
+2025-08-18 16:25:44,122 [INFO] Data ingestion completed successfully.

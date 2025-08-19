@@ -1,0 +1,16 @@
+[2025-08-17T04:28:35.633+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: churn_pipeline_dag.data_validation manual__2025-08-17T04:28:29.487650+00:00 [queued]>
+[2025-08-17T04:28:35.640+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: churn_pipeline_dag.data_validation manual__2025-08-17T04:28:29.487650+00:00 [queued]>
+[2025-08-17T04:28:35.641+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2025-08-17T04:28:35.655+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): data_validation> on 2025-08-17 04:28:29.487650+00:00
+[2025-08-17T04:28:35.663+0000] {standard_task_runner.py:57} INFO - Started process 83 to run task
+[2025-08-17T04:28:35.666+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'churn_pipeline_dag', 'data_validation', 'manual__2025-08-17T04:28:29.487650+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/churn_pipeline_dag.py', '--cfg-path', '/tmp/tmp65tj6bq6']
+[2025-08-17T04:28:35.667+0000] {standard_task_runner.py:85} INFO - Job 12: Subtask data_validation
+[2025-08-17T04:28:35.718+0000] {task_command.py:415} INFO - Running <TaskInstance: churn_pipeline_dag.data_validation manual__2025-08-17T04:28:29.487650+00:00 [running]> on host 462815b998ae
+[2025-08-17T04:28:35.788+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='churn_pipeline_dag' AIRFLOW_CTX_TASK_ID='data_validation' AIRFLOW_CTX_EXECUTION_DATE='2025-08-17T04:28:29.487650+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-08-17T04:28:29.487650+00:00'
+[2025-08-17T04:28:36.666+0000] {logging_mixin.py:151} INFO - Starting data validation...
+data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_042833/part-00001.csv passed all checks
+Data quality report saved to reports/data_quality_report.csv
+[2025-08-17T04:28:36.668+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-08-17T04:28:36.684+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=churn_pipeline_dag, task_id=data_validation, execution_date=20250817T042829, start_date=20250817T042835, end_date=20250817T042836
+[2025-08-17T04:28:36.724+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-08-17T04:28:36.751+0000] {taskinstance.py:2784} INFO - 1 downstream tasks scheduled from follow-on schedule check

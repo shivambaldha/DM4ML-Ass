@@ -1,0 +1,6 @@
+matplotlib
+pandas
+scikit-learn
+seaborn
+apache-airflow-providers-postgres
+dvc

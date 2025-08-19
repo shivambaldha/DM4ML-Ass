@@ -1,0 +1,33 @@
+2025-08-17 04:46:39,537 [INFO] Starting data preparation...
+2025-08-17 04:56:25,670 [INFO] Starting data preparation...
+2025-08-17 05:05:58,661 [INFO] Starting data preparation...
+2025-08-17 05:06:58,854 [INFO] Starting data preparation...
+2025-08-17 05:06:58,883 [INFO] Clean data saved to data/clean/transactions_clean.csv
+2025-08-17 05:06:58,898 [INFO] Saved summary statistics.
+2025-08-17 05:06:59,481 [INFO] EDA plots saved to reports/.
+2025-08-17 05:06:59,482 [INFO] Data preparation completed successfully.
+2025-08-17 05:09:29,923 [INFO] Starting data preparation...
+2025-08-17 05:09:29,945 [INFO] Clean data saved to data/clean/transactions_clean.csv
+2025-08-17 05:09:29,956 [INFO] Saved summary statistics.
+2025-08-17 05:09:30,527 [INFO] EDA plots saved to reports/.
+2025-08-17 05:09:30,528 [INFO] Data preparation completed successfully.
+2025-08-17 05:12:13,147 [INFO] Starting data preparation...
+2025-08-17 05:12:13,172 [INFO] Clean data saved to data/clean/transactions_clean.csv
+2025-08-17 05:12:13,183 [INFO] Saved summary statistics.
+2025-08-17 05:12:13,761 [INFO] EDA plots saved to reports/.
+2025-08-17 05:12:13,762 [INFO] Data preparation completed successfully.
+2025-08-17 05:35:43,712 [INFO] Starting data preparation...
+2025-08-17 05:35:43,754 [INFO] Clean data saved to data/clean/transactions_clean.csv
+2025-08-17 05:35:43,765 [INFO] Saved summary statistics.
+2025-08-17 05:35:44,399 [INFO] EDA plots saved to reports/.
+2025-08-17 05:35:44,400 [INFO] Data preparation completed successfully.
+2025-08-17 05:39:00,959 [INFO] Starting data preparation...
+2025-08-17 05:39:00,976 [INFO] Clean data saved to data/clean/transactions_clean.csv
+2025-08-17 05:39:00,987 [INFO] Saved summary statistics.
+2025-08-17 05:39:01,514 [INFO] EDA plots saved to reports/.
+2025-08-17 05:39:01,514 [INFO] Data preparation completed successfully.
+2025-08-18 16:25:50,543 [INFO] Starting data preparation...
+2025-08-18 16:25:50,571 [INFO] Clean data saved to data/clean/transactions_clean.csv
+2025-08-18 16:25:50,587 [INFO] Saved summary statistics.
+2025-08-18 16:25:51,135 [INFO] EDA plots saved to reports/.
+2025-08-18 16:25:51,136 [INFO] Data preparation completed successfully.

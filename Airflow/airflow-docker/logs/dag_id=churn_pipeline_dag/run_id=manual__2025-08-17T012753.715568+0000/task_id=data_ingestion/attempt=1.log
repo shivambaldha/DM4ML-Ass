@@ -1,0 +1,23 @@
+[2025-08-17T01:27:57.445+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-08-17T01:27:57.472+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: churn_pipeline_dag.data_ingestion manual__2025-08-17T01:27:53.715568+00:00 [queued]>
+[2025-08-17T01:27:57.480+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: churn_pipeline_dag.data_ingestion manual__2025-08-17T01:27:53.715568+00:00 [queued]>
+[2025-08-17T01:27:57.481+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-08-17T01:27:57.496+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): data_ingestion> on 2025-08-17 01:27:53.715568+00:00
+[2025-08-17T01:27:57.506+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=86) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-08-17T01:27:57.509+0000] {standard_task_runner.py:64} INFO - Started process 88 to run task
+[2025-08-17T01:27:57.509+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'churn_pipeline_dag', 'data_ingestion', 'manual__2025-08-17T01:27:53.715568+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/churn_pipeline_dag.py', '--cfg-path', '/tmp/tmpz3sjzvj7']
+[2025-08-17T01:27:57.512+0000] {standard_task_runner.py:91} INFO - Job 25: Subtask data_ingestion
+[2025-08-17T01:27:57.575+0000] {task_command.py:426} INFO - Running <TaskInstance: churn_pipeline_dag.data_ingestion manual__2025-08-17T01:27:53.715568+00:00 [running]> on host 4d1e8e9a9fc3
+[2025-08-17T01:27:57.680+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='churn_pipeline_dag' AIRFLOW_CTX_TASK_ID='data_ingestion' AIRFLOW_CTX_EXECUTION_DATE='2025-08-17T01:27:53.715568+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-08-17T01:27:53.715568+00:00'
+[2025-08-17T01:27:57.683+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-08-17T01:27:59.478+0000] {logging_mixin.py:188} INFO - Starting data ingestion...
+Web logs data ingested: data/raw/web_logs_20250817_012759.csv
+Data ingestion completed successfully.
+[2025-08-17T01:27:59.479+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-08-17T01:27:59.480+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-08-17T01:27:59.491+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=churn_pipeline_dag, task_id=data_ingestion, run_id=manual__2025-08-17T01:27:53.715568+00:00, execution_date=20250817T012753, start_date=20250817T012757, end_date=20250817T012759
+[2025-08-17T01:27:59.533+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-08-17T01:27:59.565+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-08-17T01:27:59.568+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,5 @@
+column,missing_values,dtype
+customer_id,0,int64
+transactions,0,int32
+spend,0,float64
+last_login_days,0,int32

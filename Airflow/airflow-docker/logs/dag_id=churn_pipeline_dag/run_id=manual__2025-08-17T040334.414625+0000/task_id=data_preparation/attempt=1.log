@@ -1,0 +1,27 @@
+[2025-08-17T04:03:41.813+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: churn_pipeline_dag.data_preparation manual__2025-08-17T04:03:34.414625+00:00 [queued]>
+[2025-08-17T04:03:41.822+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: churn_pipeline_dag.data_preparation manual__2025-08-17T04:03:34.414625+00:00 [queued]>
+[2025-08-17T04:03:41.823+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2025-08-17T04:03:41.836+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): data_preparation> on 2025-08-17 04:03:34.414625+00:00
+[2025-08-17T04:03:41.844+0000] {standard_task_runner.py:57} INFO - Started process 103 to run task
+[2025-08-17T04:03:41.848+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'churn_pipeline_dag', 'data_preparation', 'manual__2025-08-17T04:03:34.414625+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/churn_pipeline_dag.py', '--cfg-path', '/tmp/tmpqt4i94ne']
+[2025-08-17T04:03:41.849+0000] {standard_task_runner.py:85} INFO - Job 8: Subtask data_preparation
+[2025-08-17T04:03:41.903+0000] {task_command.py:415} INFO - Running <TaskInstance: churn_pipeline_dag.data_preparation manual__2025-08-17T04:03:34.414625+00:00 [running]> on host 036af1e4ca17
+[2025-08-17T04:03:41.981+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='churn_pipeline_dag' AIRFLOW_CTX_TASK_ID='data_preparation' AIRFLOW_CTX_EXECUTION_DATE='2025-08-17T04:03:34.414625+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-08-17T04:03:34.414625+00:00'
+[2025-08-17T04:03:42.088+0000] {logging_mixin.py:151} INFO - ❌ Script failed: /opt/***/02_Source_Code/step5_data_preparation/data_prep.py
+[2025-08-17T04:03:42.089+0000] {logging_mixin.py:151} INFO - STDOUT: 
+[2025-08-17T04:03:42.089+0000] {logging_mixin.py:151} INFO - STDERR: python: can't open file '/opt/***/02_Source_Code/step5_data_preparation/data_prep.py': [Errno 2] No such file or directory
+[2025-08-17T04:03:42.090+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/churn_pipeline_dag.py", line 12, in run_script
+    result = subprocess.run(
+  File "/usr/local/lib/python3.8/subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python', '/opt/airflow/02_Source_Code/step5_data_preparation/data_prep.py']' returned non-zero exit status 2.
+[2025-08-17T04:03:42.109+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=churn_pipeline_dag, task_id=data_preparation, execution_date=20250817T040334, start_date=20250817T040341, end_date=20250817T040342
+[2025-08-17T04:03:42.123+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 8 for task data_preparation (Command '['python', '/opt/airflow/02_Source_Code/step5_data_preparation/data_prep.py']' returned non-zero exit status 2.; 103)
+[2025-08-17T04:03:42.142+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-08-17T04:03:42.168+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

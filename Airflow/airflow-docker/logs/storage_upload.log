@@ -1,0 +1,26 @@
+2025-08-17 04:03:39,269 [INFO] Uploaded to lake: data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_040337/part-00001.csv
+2025-08-17 04:03:39,269 [INFO] Raw storage upload completed successfully.
+2025-08-17 04:28:34,872 [INFO] Uploaded to lake: data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_042833/part-00001.csv
+2025-08-17 04:28:34,872 [INFO] Raw storage upload completed successfully.
+2025-08-17 04:31:22,218 [INFO] Uploaded to lake: data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_043120/part-00001.csv
+2025-08-17 04:31:22,219 [INFO] Raw storage upload completed successfully.
+2025-08-17 04:36:09,914 [INFO] Uploaded to lake: data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_043608/part-00001.csv
+2025-08-17 04:36:09,914 [INFO] Raw storage upload completed successfully.
+2025-08-17 04:46:35,531 [INFO] Uploaded to lake: data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_044634/part-00001.csv
+2025-08-17 04:46:35,532 [INFO] Raw storage upload completed successfully.
+2025-08-17 04:56:21,220 [INFO] Uploaded to lake: data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_045619/part-00001.csv
+2025-08-17 04:56:21,221 [INFO] Raw storage upload completed successfully.
+2025-08-17 05:05:53,956 [INFO] Uploaded to lake: data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_050552/part-00001.csv
+2025-08-17 05:05:53,957 [INFO] Raw storage upload completed successfully.
+2025-08-17 05:06:54,021 [INFO] Uploaded to lake: data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_050652/part-00001.csv
+2025-08-17 05:06:54,021 [INFO] Raw storage upload completed successfully.
+2025-08-17 05:09:25,790 [INFO] Uploaded to lake: data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_050923/part-00001.csv
+2025-08-17 05:09:25,790 [INFO] Raw storage upload completed successfully.
+2025-08-17 05:12:08,906 [INFO] Uploaded to lake: data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_051207/part-00001.csv
+2025-08-17 05:12:08,907 [INFO] Raw storage upload completed successfully.
+2025-08-17 05:35:38,279 [INFO] Uploaded to lake: data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_053536/part-00001.csv
+2025-08-17 05:35:38,280 [INFO] Raw storage upload completed successfully.
+2025-08-17 05:38:56,786 [INFO] Uploaded to lake: data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_053855/part-00001.csv
+2025-08-17 05:38:56,787 [INFO] Raw storage upload completed successfully.
+2025-08-18 16:25:45,722 [INFO] Uploaded to lake: data_lake/raw/source=web_logs/ingestion_date=2025-08-18/run_id=20250818_162544/part-00001.csv
+2025-08-18 16:25:45,723 [INFO] Raw storage upload completed successfully.

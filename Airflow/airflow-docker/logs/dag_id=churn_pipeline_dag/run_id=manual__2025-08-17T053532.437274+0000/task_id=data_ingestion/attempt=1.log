@@ -1,0 +1,16 @@
+[2025-08-17T05:35:33.780+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: churn_pipeline_dag.data_ingestion manual__2025-08-17T05:35:32.437274+00:00 [queued]>
+[2025-08-17T05:35:33.792+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: churn_pipeline_dag.data_ingestion manual__2025-08-17T05:35:32.437274+00:00 [queued]>
+[2025-08-17T05:35:33.793+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2025-08-17T05:35:33.809+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): data_ingestion> on 2025-08-17 05:35:32.437274+00:00
+[2025-08-17T05:35:33.817+0000] {standard_task_runner.py:57} INFO - Started process 60 to run task
+[2025-08-17T05:35:33.822+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'churn_pipeline_dag', 'data_ingestion', 'manual__2025-08-17T05:35:32.437274+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/churn_pipeline_dag.py', '--cfg-path', '/tmp/tmp3xcowkdg']
+[2025-08-17T05:35:33.823+0000] {standard_task_runner.py:85} INFO - Job 29: Subtask data_ingestion
+[2025-08-17T05:35:33.905+0000] {task_command.py:416} INFO - Running <TaskInstance: churn_pipeline_dag.data_ingestion manual__2025-08-17T05:35:32.437274+00:00 [running]> on host dc6694cfc37c
+[2025-08-17T05:35:33.998+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='churn_pipeline_dag' AIRFLOW_CTX_TASK_ID='data_ingestion' AIRFLOW_CTX_EXECUTION_DATE='2025-08-17T05:35:32.437274+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-08-17T05:35:32.437274+00:00'
+[2025-08-17T05:35:36.465+0000] {python.py:194} INFO - Done. Returned value was: Starting data ingestion...
+Web logs data ingested: data/raw/web_logs_20250817_053536.csv
+Data ingestion completed successfully.
+
+[2025-08-17T05:35:36.500+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=churn_pipeline_dag, task_id=data_ingestion, execution_date=20250817T053532, start_date=20250817T053533, end_date=20250817T053536
+[2025-08-17T05:35:36.530+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-08-17T05:35:36.562+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

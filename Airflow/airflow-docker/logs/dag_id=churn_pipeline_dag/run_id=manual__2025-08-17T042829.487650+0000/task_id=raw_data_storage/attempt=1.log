@@ -1,0 +1,15 @@
+[2025-08-17T04:28:34.474+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: churn_pipeline_dag.raw_data_storage manual__2025-08-17T04:28:29.487650+00:00 [queued]>
+[2025-08-17T04:28:34.485+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: churn_pipeline_dag.raw_data_storage manual__2025-08-17T04:28:29.487650+00:00 [queued]>
+[2025-08-17T04:28:34.485+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2025-08-17T04:28:34.497+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): raw_data_storage> on 2025-08-17 04:28:29.487650+00:00
+[2025-08-17T04:28:34.506+0000] {standard_task_runner.py:57} INFO - Started process 80 to run task
+[2025-08-17T04:28:34.510+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'churn_pipeline_dag', 'raw_data_storage', 'manual__2025-08-17T04:28:29.487650+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/churn_pipeline_dag.py', '--cfg-path', '/tmp/tmpqhp97q62']
+[2025-08-17T04:28:34.512+0000] {standard_task_runner.py:85} INFO - Job 11: Subtask raw_data_storage
+[2025-08-17T04:28:34.567+0000] {task_command.py:415} INFO - Running <TaskInstance: churn_pipeline_dag.raw_data_storage manual__2025-08-17T04:28:29.487650+00:00 [running]> on host 462815b998ae
+[2025-08-17T04:28:34.640+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='churn_pipeline_dag' AIRFLOW_CTX_TASK_ID='raw_data_storage' AIRFLOW_CTX_EXECUTION_DATE='2025-08-17T04:28:29.487650+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-08-17T04:28:29.487650+00:00'
+[2025-08-17T04:28:34.881+0000] {logging_mixin.py:151} INFO - Uploaded to lake: data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_042833/part-00001.csv
+Raw storage upload completed successfully.
+[2025-08-17T04:28:34.882+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-08-17T04:28:34.898+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=churn_pipeline_dag, task_id=raw_data_storage, execution_date=20250817T042829, start_date=20250817T042834, end_date=20250817T042834
+[2025-08-17T04:28:34.925+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-08-17T04:28:34.951+0000] {taskinstance.py:2784} INFO - 1 downstream tasks scheduled from follow-on schedule check

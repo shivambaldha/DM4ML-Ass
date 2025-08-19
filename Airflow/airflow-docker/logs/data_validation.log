@@ -1,0 +1,49 @@
+2025-08-17 01:28:04,372 [INFO] Starting data validation...
+2025-08-17 01:28:04,376 [INFO] Data quality report saved to reports/data_quality_report.csv
+2025-08-17 04:03:41,095 [INFO] Starting data validation...
+2025-08-17 04:03:41,112 [INFO] data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_040337/part-00001.csv passed all checks
+2025-08-17 04:03:41,114 [INFO] Data quality report saved to reports/data_quality_report.csv
+2025-08-17 04:28:36,581 [INFO] Starting data validation...
+2025-08-17 04:28:36,600 [INFO] data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_042833/part-00001.csv passed all checks
+2025-08-17 04:28:36,602 [INFO] Data quality report saved to reports/data_quality_report.csv
+2025-08-17 04:31:24,006 [INFO] Starting data validation...
+2025-08-17 04:31:24,023 [INFO] data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_043120/part-00001.csv passed all checks
+2025-08-17 04:31:24,027 [INFO] data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_042833/part-00001.csv passed all checks
+2025-08-17 04:31:24,029 [INFO] Data quality report saved to reports/data_quality_report.csv
+2025-08-17 04:36:12,310 [INFO] Starting data validation...
+2025-08-17 04:36:12,325 [INFO] data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_043120/part-00001.csv passed all checks
+2025-08-17 04:36:12,329 [INFO] data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_043608/part-00001.csv passed all checks
+2025-08-17 04:36:12,332 [INFO] data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_042833/part-00001.csv passed all checks
+2025-08-17 04:36:12,333 [INFO] Data quality report saved to reports/data_quality_report.csv
+2025-08-17 04:46:37,319 [INFO] Starting data validation...
+2025-08-17 04:46:37,326 [INFO] data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_044634/part-00001.csv passed all checks
+2025-08-17 04:46:37,328 [INFO] Data quality report saved to reports/data_quality_report.csv
+2025-08-17 04:56:22,929 [INFO] Starting data validation...
+2025-08-17 04:56:22,938 [INFO] data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_045619/part-00001.csv passed all checks
+2025-08-17 04:56:22,939 [INFO] Data quality report saved to reports/data_quality_report.csv
+2025-08-17 05:05:55,873 [INFO] Starting data validation...
+2025-08-17 05:05:55,890 [INFO] data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_050552/part-00001.csv passed all checks
+2025-08-17 05:05:55,892 [INFO] Data quality report saved to reports/data_quality_report.csv
+2025-08-17 05:06:56,385 [INFO] Starting data validation...
+2025-08-17 05:06:56,393 [INFO] data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_050652/part-00001.csv passed all checks
+2025-08-17 05:06:56,396 [INFO] data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_050552/part-00001.csv passed all checks
+2025-08-17 05:06:56,398 [INFO] Data quality report saved to reports/data_quality_report.csv
+2025-08-17 05:09:27,521 [INFO] Starting data validation...
+2025-08-17 05:09:27,530 [INFO] data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_050923/part-00001.csv passed all checks
+2025-08-17 05:09:27,532 [INFO] Data quality report saved to reports/data_quality_report.csv
+2025-08-17 05:12:10,633 [INFO] Starting data validation...
+2025-08-17 05:12:10,641 [INFO] data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_051207/part-00001.csv passed all checks
+2025-08-17 05:12:10,643 [INFO] data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_050923/part-00001.csv passed all checks
+2025-08-17 05:12:10,646 [INFO] Data quality report saved to reports/data_quality_report.csv
+2025-08-17 05:35:40,675 [INFO] Starting data validation...
+2025-08-17 05:35:40,682 [INFO] data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_053536/part-00001.csv passed all checks
+2025-08-17 05:35:40,684 [INFO] Data quality report saved to reports/data_quality_report.csv
+2025-08-17 05:38:58,468 [INFO] Starting data validation...
+2025-08-17 05:38:58,474 [INFO] data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_053855/part-00001.csv passed all checks
+2025-08-17 05:38:58,476 [INFO] data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_053536/part-00001.csv passed all checks
+2025-08-17 05:38:58,479 [INFO] Data quality report saved to reports/data_quality_report.csv
+2025-08-18 16:25:47,917 [INFO] Starting data validation...
+2025-08-18 16:25:47,932 [INFO] data_lake/raw/source=web_logs/ingestion_date=2025-08-18/run_id=20250818_162544/part-00001.csv passed all checks
+2025-08-18 16:25:47,936 [INFO] data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_053855/part-00001.csv passed all checks
+2025-08-18 16:25:47,939 [INFO] data_lake/raw/source=web_logs/ingestion_date=2025-08-17/run_id=20250817_053536/part-00001.csv passed all checks
+2025-08-18 16:25:47,941 [INFO] Data quality report saved to reports/data_quality_report.csv

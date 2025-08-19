@@ -1,0 +1,21 @@
+[2025-08-17T01:28:15.227+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-08-17T01:28:15.254+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: churn_pipeline_dag.model_training manual__2025-08-17T01:27:53.715568+00:00 [queued]>
+[2025-08-17T01:28:15.262+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: churn_pipeline_dag.model_training manual__2025-08-17T01:27:53.715568+00:00 [queued]>
+[2025-08-17T01:28:15.264+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-08-17T01:28:15.278+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): model_training> on 2025-08-17 01:27:53.715568+00:00
+[2025-08-17T01:28:15.290+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=158) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-08-17T01:28:15.292+0000] {standard_task_runner.py:64} INFO - Started process 160 to run task
+[2025-08-17T01:28:15.291+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'churn_pipeline_dag', 'model_training', 'manual__2025-08-17T01:27:53.715568+00:00', '--job-id', '31', '--raw', '--subdir', 'DAGS_FOLDER/churn_pipeline_dag.py', '--cfg-path', '/tmp/tmpbteaoztd']
+[2025-08-17T01:28:15.294+0000] {standard_task_runner.py:91} INFO - Job 31: Subtask model_training
+[2025-08-17T01:28:15.371+0000] {task_command.py:426} INFO - Running <TaskInstance: churn_pipeline_dag.model_training manual__2025-08-17T01:27:53.715568+00:00 [running]> on host 4d1e8e9a9fc3
+[2025-08-17T01:28:15.507+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='churn_pipeline_dag' AIRFLOW_CTX_TASK_ID='model_training' AIRFLOW_CTX_EXECUTION_DATE='2025-08-17T01:27:53.715568+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-08-17T01:27:53.715568+00:00'
+[2025-08-17T01:28:15.509+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-08-17T01:28:15.587+0000] {logging_mixin.py:188} INFO - ERRORS: python: can't open file '/opt/***/02_Source_Code/step8_model_training/train_model.py': [Errno 2] No such file or directory
+[2025-08-17T01:28:15.587+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-08-17T01:28:15.588+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-08-17T01:28:15.598+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=churn_pipeline_dag, task_id=model_training, run_id=manual__2025-08-17T01:27:53.715568+00:00, execution_date=20250817T012753, start_date=20250817T012815, end_date=20250817T012815
+[2025-08-17T01:28:15.628+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-08-17T01:28:15.647+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-08-17T01:28:15.649+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

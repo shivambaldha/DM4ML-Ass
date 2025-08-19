@@ -1,0 +1,109 @@
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:latest
+
+  airflow-webserver:
+    build: .
+    image: airflow-custom:latest
+    restart: always
+    depends_on:
+      - postgres
+      - redis
+      - airflow-scheduler
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=CeleryExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - AIRFLOW__CELERY__BROKER_URL=redis://redis:6379/0
+      - AIRFLOW__CELERY__RESULT_BACKEND=db+postgresql://airflow:airflow@postgres/airflow
+      - AIRFLOW__CORE__FERNET_KEY=${AIRFLOW__CORE__FERNET_KEY}
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage/02_Source_Code:/opt/airflow/02_Source_Code
+      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage/03_Data:/opt/airflow/03_Data
+      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage:/opt/airflow/DM4ML_Assignment_ByStage
+    ports:
+      - "8080:8080"
+    command: webserver
+
+  airflow-scheduler:
+    build: .
+    image: airflow-custom:latest
+    restart: always
+    depends_on:
+      - postgres
+      - redis
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=CeleryExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - AIRFLOW__CELERY__BROKER_URL=redis://redis:6379/0
+      - AIRFLOW__CELERY__RESULT_BACKEND=db+postgresql://airflow:airflow@postgres/airflow
+      - AIRFLOW__CORE__FERNET_KEY=${AIRFLOW__CORE__FERNET_KEY}
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage/02_Source_Code:/opt/airflow/02_Source_Code
+      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage/03_Data:/opt/airflow/03_Data
+      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage:/opt/airflow/DM4ML_Assignment_ByStage
+    command: scheduler
+
+  airflow-worker:
+    build: .
+    image: airflow-custom:latest
+    restart: always
+    depends_on:
+      - postgres
+      - redis
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=CeleryExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - AIRFLOW__CELERY__BROKER_URL=redis://redis:6379/0
+      - AIRFLOW__CELERY__RESULT_BACKEND=db+postgresql://airflow:airflow@postgres/airflow
+      - AIRFLOW__CORE__FERNET_KEY=${AIRFLOW__CORE__FERNET_KEY}
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage/02_Source_Code:/opt/airflow/02_Source_Code
+      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage/03_Data:/opt/airflow/03_Data
+      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage:/opt/airflow/DM4ML_Assignment_ByStage
+    command: celery worker
+
+  airflow-init:
+    build: .
+    image: airflow-custom:latest
+    depends_on:
+      - postgres
+      - redis
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=CeleryExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - AIRFLOW__CELERY__BROKER_URL=redis://redis:6379/0
+      - AIRFLOW__CELERY__RESULT_BACKEND=db+postgresql://airflow:airflow@postgres/airflow
+      - AIRFLOW__CORE__FERNET_KEY=${AIRFLOW__CORE__FERNET_KEY}
+    entrypoint: >
+      /bin/bash -c "
+      airflow db migrate &&
+      airflow users create --username airflow --firstname Air --lastname Flow --role Admin --email airflow@example.com --password airflow
+      "
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage/02_Source_Code:/opt/airflow/02_Source_Code
+      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage/03_Data:/opt/airflow/03_Data
+      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage:/opt/airflow/DM4ML_Assignment_ByStage
+
+volumes:
+  postgres_data:
