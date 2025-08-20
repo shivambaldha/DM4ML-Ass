@@ -29,9 +29,9 @@ services:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
-      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage/02_Source_Code:/opt/airflow/02_Source_Code
-      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage/03_Data:/opt/airflow/03_Data
-      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage:/opt/airflow/DM4ML_Assignment_ByStage
+      - /Users/shivambaldha/Developer/DM4ML-Ass/DM4ML_Assignment_ByStage/02_Source_Code:/opt/airflow/02_Source_Code
+      - /Users/shivambaldha/Developer/DM4ML-Ass/DM4ML_Assignment_ByStage/03_Data:/opt/airflow/03_Data
+      - /Users/shivambaldha/Developer/DM4ML-Ass/DM4ML_Assignment_ByStage:/opt/airflow/DM4ML_Assignment_ByStage
     ports:
       - "8080:8080"
     command: webserver
@@ -53,9 +53,9 @@ services:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
-      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage/02_Source_Code:/opt/airflow/02_Source_Code
-      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage/03_Data:/opt/airflow/03_Data
-      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage:/opt/airflow/DM4ML_Assignment_ByStage
+      - /Users/shivambaldha/Developer/DM4ML-Ass/DM4ML_Assignment_ByStage/02_Source_Code:/opt/airflow/02_Source_Code
+      - /Users/shivambaldha/Developer/DM4ML-Ass/DM4ML_Assignment_ByStage/03_Data:/opt/airflow/03_Data
+      - /Users/shivambaldha/Developer/DM4ML-Ass/DM4ML_Assignment_ByStage:/opt/airflow/DM4ML_Assignment_ByStage
     command: scheduler
 
   airflow-worker:
@@ -75,9 +75,9 @@ services:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
-      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage/02_Source_Code:/opt/airflow/02_Source_Code
-      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage/03_Data:/opt/airflow/03_Data
-      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage:/opt/airflow/DM4ML_Assignment_ByStage
+      - /Users/shivambaldha/Developer/DM4ML-Ass/DM4ML_Assignment_ByStage/02_Source_Code:/opt/airflow/02_Source_Code
+      - /Users/shivambaldha/Developer/DM4ML-Ass/DM4ML_Assignment_ByStage/03_Data:/opt/airflow/03_Data
+      - /Users/shivambaldha/Developer/DM4ML-Ass/DM4ML_Assignment_ByStage:/opt/airflow/DM4ML_Assignment_ByStage
     command: celery worker
 
   airflow-init:
@@ -101,9 +101,10 @@ services:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
-      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage/02_Source_Code:/opt/airflow/02_Source_Code
-      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage/03_Data:/opt/airflow/03_Data
-      - /c/My_Drive/Data_Science/BITS/Sem-2/DMML/Assignment/DM4ML_Assignment_ByStage:/opt/airflow/DM4ML_Assignment_ByStage
+      - /Users/shivambaldha/Developer/DM4ML-Ass/DM4ML_Assignment_ByStage/02_Source_Code:/opt/airflow/02_Source_Code
+      - /Users/shivambaldha/Developer/DM4ML-Ass/DM4ML_Assignment_ByStage/03_Data:/opt/airflow/03_Data
+      - /Users/shivambaldha/Developer/DM4ML-Ass/DM4ML_Assignment_ByStage:/opt/airflow/DM4ML_Assignment_ByStage
 
 volumes:
   postgres_data:
+ 
