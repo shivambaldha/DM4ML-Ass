@@ -16,6 +16,34 @@ This repository contains a complete, submission-ready implementation of an end-t
 
 > **IMPORTANT**: This project is designed to run locally. Internet is only required if you want to demonstrate the mock REST API in Step 2. Otherwise, the sample CSV is sufficient.
 
+
+````markdown
+# How to Run the Entire Pipeline
+
+1. Start Docker Desktop first.  
+2. Navigate to the project directory:
+````
+
+```bash
+   cd Airflow/airflow-docker
+````
+
+3. Build the Docker containers (without cache):
+
+   ```bash
+   docker compose build --no-cache
+   ```
+4. Start the containers:
+
+   ```bash
+   docker compose up -d
+   ```
+5. Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+   * **Username:** `airflow`
+   * **Password:** `airflow`
+
+
 ---
 
 ## Quickstart (One-click Runner)
@@ -169,11 +197,4 @@ python orchestrate_prefect.py
 - Folder trees: `data_lake/raw/...`, `reports/*`, `models/*`
 - DVC: terminal output for `dvc status`, `git log`
 
----
 
-## Notes
-- Replace the mock API with your real source(s) if available
-- Extend data validation with Great Expectations if you prefer
-- Consider MLflow for experiment tracking in Step 9
-
-Good luck with your submission!
